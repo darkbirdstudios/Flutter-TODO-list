@@ -36,7 +36,7 @@ class DBProvider {
     await db!.update("tasks", newTask.toMap(),where: 'id == ?',whereArgs: [newTask.id]);
   }
 
-  Future<dynamic> deleteTask(id) async{
+  deleteTask(id) async{
     final db = await database;
     await db!.delete("tasks",where: 'id == ?',whereArgs: [id]);
   }
