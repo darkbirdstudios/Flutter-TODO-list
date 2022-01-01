@@ -292,7 +292,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             motion: const ScrollMotion(),
                             children: [
                               SlidableAction(
-                                flex: 2,
+                                flex: 1,
                                 autoClose: true,
                                 backgroundColor: Color(0xFF7BC043),
                                 foregroundColor: Colors.white,
@@ -374,7 +374,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   return const Center(
                     child: Text(
                       "Start creating tasks",
-                      style: TextStyle(fontSize: 22),
+                      style: TextStyle(fontSize: 22,color: Colors.white),
                     ),
                   );
                 }
